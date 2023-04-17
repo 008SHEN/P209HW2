@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+    <h1>Pizza Order Form</h1>
+	
+	<form id="pizza-order-form">
+		<fieldset>
+			<legend>Choose a Pizza Size:</legend>
+			<input type="radio" name="size" value="small" id="size-small">
+			<label for="size-small">Small - $7.00</label><br>
+			<input type="radio" name="size" value="medium" id="size-medium">
+			<label for="size-medium">Medium - $10.00</label><br>
+			<input type="radio" name="size" value="large" id="size-large">
+			<label for="size-large">Large - $14.00</label><br>
+		</fieldset>
+		<img src="pizza.png" alt="pizza">
+		
+		<fieldset>
+			<legend>Choose Toppings:</legend>
+			<label for="toppings-select">Select number of toppings:</label>
+			<select name="toppings" id="toppings-select">
+				<option value="0">No Toppings - $0.00</option>
+				<option value="1">1 Topping - $2.00</option>
+				<option value="2">2 Toppings - $3.00</option>
+			</select>
+		</fieldset>
+		
+		<button type="submit">Submit</button>
+
+	</form>
+	
+	<div id="total-price"></div>
+	
+
+
+  <script src="script.js"></script>
+
+  
+  
+</body>
+
+</html>
